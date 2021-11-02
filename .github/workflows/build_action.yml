@@ -1,0 +1,6 @@
+name: Maven Build
+
+on: [push]
+
+jobs:
+    build:
