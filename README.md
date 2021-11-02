@@ -1,3 +1,3 @@
 # Programmation Orientée Objet : API & Outillage
 
-[![build]](https://github.com/TomDep/POO-tp1/blob/main/.github/workflows/build_action.yml)
+[![Java CI with Maven](https://github.com/TomDep/POO-tp1/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/TomDep/POO-tp1/actions/workflows/maven.yml)
