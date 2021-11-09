@@ -2,6 +2,9 @@ package main;
 
 import java.util.ArrayList;
 
+import main.exceptions.AnimalDansMauvaisSecteurException;
+import main.exceptions.LimiteVisiteurException;
+
 public class Zoo {
 
 	private int visiteurs = 0;

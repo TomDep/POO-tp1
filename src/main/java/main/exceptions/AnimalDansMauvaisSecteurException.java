@@ -1,4 +1,4 @@
-package main;
+package main.exceptions;
 
 @SuppressWarnings("serial")
 public class AnimalDansMauvaisSecteurException extends Exception {

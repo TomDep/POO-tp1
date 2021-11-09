@@ -1,13 +1,13 @@
-package tp1;
+package main;
 
 import org.junit.Test;
 
 import main.Animal;
-import main.AnimalDansMauvaisSecteurException;
 import main.Chien;
-import main.LimiteVisiteurException;
 import main.TypeAnimal;
 import main.Zoo;
+import main.exceptions.AnimalDansMauvaisSecteurException;
+import main.exceptions.LimiteVisiteurException;
 
 public class TestZoo {
 

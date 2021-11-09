@@ -2,6 +2,8 @@ package main;
 
 import java.util.ArrayList;
 
+import main.exceptions.SecteurVideException;
+
 public class Secteur {
 
 	private TypeAnimal typeAnimauxDansSecteur;
@@ -22,4 +24,9 @@ public class Secteur {
 	public TypeAnimal obtenirType() {
 		return typeAnimauxDansSecteur;
 	}
+
+	public void retirerAnimal() throws SecteurVideException {
+		if(animauxDansSecteur.size() <= 0) throw new SecteurVideException();
+		animauxDansSecteur.remove(animauxDansSecteur.size() - 1);
+	}	
 }
