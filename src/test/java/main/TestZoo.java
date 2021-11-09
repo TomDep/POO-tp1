@@ -16,7 +16,7 @@ public class TestZoo {
 		Zoo zoo = new Zoo();
 		
 		// Le zoo possède 1 seul secteur
-		zoo.ajouterSecteur(TypeAnimal.Chat);
+		zoo.ajouterSecteur(new Secteur(TypeAnimal.Chat));
 
 		// La limite de visiteurs devrait être 15
 		for(int i=0; i < 16; i++) {
@@ -29,7 +29,7 @@ public class TestZoo {
 		Zoo zoo = new Zoo();
 		
 		// Création d'un secteur de "chiens"
-		zoo.ajouterSecteur(TypeAnimal.Chien);
+		zoo.ajouterSecteur(new Secteur(TypeAnimal.Chien));
 		
 		// Ajout d'un chien
 		Animal chien = new Chien();

@@ -11,8 +11,7 @@ public class Zoo {
 	private ArrayList<Secteur> secteursAnimaux = new ArrayList<Secteur>();
 	private int nbVisiteurMaxParSecteur = 15;
 	
-	public void ajouterSecteur(TypeAnimal typeAnimal) {
-		Secteur secteur = new Secteur(typeAnimal);
+	public void ajouterSecteur(Secteur secteur) {
 		secteursAnimaux.add(secteur);
 	}
 	
