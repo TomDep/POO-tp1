@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import main.exceptions.SecteurVideException;
 
-public class Secteur {
+public class Secteur implements Comparable<Secteur> {
 
 	private TypeAnimal typeAnimauxDansSecteur;
 	private ArrayList<Animal> animauxDansSecteur = new ArrayList<Animal>();
@@ -28,5 +28,10 @@ public class Secteur {
 	public void retirerAnimal() throws SecteurVideException {
 		if(animauxDansSecteur.size() <= 0) throw new SecteurVideException();
 		animauxDansSecteur.remove(animauxDansSecteur.size() - 1);
+	}
+
+	@Override
+	public int compareTo(Secteur o) {
+		return getNombreAnimaux() - o.getNombreAnimaux();
 	}	
 }
