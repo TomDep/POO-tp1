@@ -9,13 +9,19 @@ import main.Zoo;
 
 public class AnimalDansMauvaisSecteurExceptionTest {
 
-	@Test(expected = AnimalDansMauvaisSecteurException.class)
-	public void test() throws AnimalDansMauvaisSecteurException {
+	@Test
+	public void test() {
 		Zoo zoo = new Zoo();	
 		
 		Secteur s = new Secteur(TypeAnimal.Chat);
 		zoo.ajouterSecteur(s);
-		zoo.nouvelAnimal(new Chien());		
+		try {
+			zoo.nouvelAnimal(new Chien());
+			assert(false);
+		} catch (AnimalDansMauvaisSecteurException e) {
+			e.printStackTrace();
+			assert(true);
+		}
 	}
 
 }
