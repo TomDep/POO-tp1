@@ -41,5 +41,14 @@ public class Zoo {
 	public int getVisiteurs() {
 		return visiteurs;
 	}
+
+	public int getNbAnimaux() {
+		int n = 0;
+		
+		for(Secteur secteur : secteursAnimaux) {
+			n += secteur.getNombreAnimaux();
+		}
+		return n;
+	}
 	
 }
